@@ -13,13 +13,13 @@ var changeState = function (state) {
 			countdownNumber = countdownNumber -1;
 			document.getElementById("countdown").innerHTML = countdownNumber;
 
-			if (countdownNumber > 4 && countdownNumber <= 7){
+			if (countdownNumber > 1 && countdownNumber <= 3){
 				document.getElementById('Miss').className = 'Miss show';
 			} else { 
 				document.getElementById('Miss').className = 'Miss';
 			};
 
-			if (countdownNumber > 3 && countdownNumber == 3){
+			if (countdownNumber > 4 && countdownNumber <== 7){
 				document.getElementById('Babe').className = 'Babe show';
 			} else { 
 				document.getElementById('Babe').className = 'Babe';
@@ -32,7 +32,6 @@ var changeState = function (state) {
 
 	} // this }; is the "If" end
 
-
 	else if (state == 3) {
 		var success = setTimeout(function(){
              var randomNumber = Math.round(Math.random()*10)
@@ -44,5 +43,9 @@ var changeState = function (state) {
             };
 		}, 2000);
 	};
+
+	if (state == 2 && state == 1) {
+
+	}
 
 } //var changeState end
