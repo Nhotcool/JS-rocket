@@ -7,11 +7,24 @@ var changeState = function (state) {
 	clearInterval (timer);
 	countdownNumber = 10;
 	document.getElementById("countdown").innerHTML = countdownNumber;
-
+//countdown
 	if (state == 2) {
 		timer = setInterval(function () {
 			countdownNumber = countdownNumber -1;
 			document.getElementById("countdown").innerHTML = countdownNumber;
+
+			if (countdownNumber > 4 && countdownNumber <= 7){
+				document.getElementById('Miss').className = 'Miss show';
+			} else { 
+				document.getElementById('Miss').className = 'Miss';
+			};
+
+			if (countdownNumber > 3 && countdownNumber == 3){
+				document.getElementById('Babe').className = 'Babe show';
+			} else { 
+				document.getElementById('Babe').className = 'Babe';
+			};
+
 			if  (countdownNumber <=0) {
 				changeState(3);
 			};
