@@ -19,7 +19,7 @@ var changeState = function (state) {
 				document.getElementById('Miss').className = 'Miss';
 			};
 
-			if (countdownNumber > 4 && countdownNumber <== 7){
+			if (countdownNumber > 4 && countdownNumber <= 7){
 				document.getElementById('Babe').className = 'Babe show';
 			} else { 
 				document.getElementById('Babe').className = 'Babe';
