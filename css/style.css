@@ -1,5 +1,22 @@
 body {
-	background-color: grey;
+	background-color: aquamarine;
+	font-family: 'helvetica', 'sans-serif';
+	text-align: center;
+	padding: 30px;
+	padding-left: 75px;
+	font-size: 40px
+	color: black;
+}
+
+a.button{
+	background-color: white;
+	color: black;
+	padding: 30px 40px;
+	text-decoration: none;
+	border-radius: 20px;
+	margin-bottom: 50px;
+	font-size: 15px;
+	font-style: 'helvetica';
 }
 
 .cool{
